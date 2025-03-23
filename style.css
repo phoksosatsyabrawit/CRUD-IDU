@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body{
+    background-image: url(360_F_1107050754_c1HuXUXqucrcDstCDsgkbEB7lKkMGrOp.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+.container{
+    /* display: none; */
+    background-color: slategray;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    padding: 15px;
+}
+.showform{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 5%;
+    left: 90%;
+}
+.closeform{
+    /* display: none; */
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 5%;
+    left: 90%;
+}

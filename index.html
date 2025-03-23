@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-3">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CRUD-IDU-FinalY2S2/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha33-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>CRUD Project</title>
+</head>
+<body style="background-color: whitesmoke;">
+    <div class="showform" id="show">
+        <button type="submit" id="show" onclick="btnshow()" class="btn btn-primary">Show</button>
+    </div>
+    <div class="closeform" id="close" style="display: none;">
+        <button type="submit" id="close" onclick="btnclose()" class="btn btn-warning">Close</button>
+    </div>
+    <div class="container mt-5" id="contain" style="display: none;">
+        <h2 class="text-center text-secondary-emphasis fs-1 fw-bold mb-4"><strong>CRUD Employee Systems</strong></h2>
+        <form id="empform" class="empform mb-4">
+            <div class="form-row row align-items-center">
+                <div class="form-group col-md-4">
+                    <label for="name" class="fs-5 fw-medium mb-1">Employee Name</label>
+                    <input type="text" class="form-control" required placeholder="Enter name..." id="empname">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="post" class="fs-5 fw-medium mb-1">Position</label>
+                    <input type="text" class="form-control" required placeholder="Position..." id="emppost">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="date" class="fs-5 fw-medium mb-1">Hire Date</label>
+                    <input type="date" class="form-control" required id="hiredate">
+                </div>
+            </div>
+        </form>
+        <div>
+            <button class="btn btn-primary mb-3" id="addemp" onclick="addemp()">Add Employee</button>
+        </div>
+        <div class="">
+            <table class="table table-bordered table-primary-emphasis text-center" id="payloadheader">
+                <thead>
+                    <tr>
+                        <th>#ID</th>
+                        <th>Employee Name</th>
+                        <th>Position</th>
+                        <th>Hire Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody  id="payload"><!-- add data dynamic -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="/CRUD-IDU-FinalY2S2/index.js"></script>
+</html>
